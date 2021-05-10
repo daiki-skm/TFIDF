@@ -2,6 +2,7 @@ import math
 import collections
 from collections import Counter
 from collections import defaultdict
+import numpy as np
 
 
 def cal_tfidf(input_documents):
@@ -14,11 +15,8 @@ def cal_tfidf(input_documents):
 
     # Calculating TFIDF
     docTFtable = defaultdict(Counter)
-    print('--------------------------------------docTFtable---------', docTFtable)
     DFtable = Counter()
-    print('--------------------------------------DFtable---------', DFtable)
     docTFIDFtable = defaultdict(Counter)
-    print('--------------------------------------docTFIDFtable---------', docTFIDFtable)
 
     for document in input_documents:
         words = document.split()
@@ -33,3 +31,7 @@ def cal_tfidf(input_documents):
             docTFIDFtable[document][kw] = docTFtable[document][kw] * math.log(N / DFtable[kw])
 
     return docTFIDFtable, rdic
+
+
+def cos_sim(v1, v2):
+    return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
