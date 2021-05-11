@@ -7,7 +7,7 @@ import numpy as np
 
 def cal_tfidf(input_documents):
     N = len(input_documents)
-    words = "".join(input_documents).split()
+    words = ''.join(input_documents).split()
     count = collections.Counter(words).most_common()
 
     # Build dictionaries
