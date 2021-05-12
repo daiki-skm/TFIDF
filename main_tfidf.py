@@ -10,39 +10,41 @@ print('Word Table = ', rdic)
 print()
 print()
 
-lenArr = []
-for document in input_documents:
-    lenArr.append(len(docTFIDFdata[document]))
-minArrNum = min(lenArr)
-allNumArr = [[0.0] * minArrNum for i in range(10)]
-
-i = 0
-j = 0
-
 for document in input_documents:
     print('Document: ', document.rstrip())
     print(docTFIDFdata[document])
-    for kw in docTFIDFdata[document].keys():
-        if j < minArrNum:
-            allNumArr[i][j] = docTFIDFdata[document][kw]
-        j += 1
     print()
     print()
-    i += 1
-    j = 0
 
-res = []
+tfidfTable = [[0.0 for i in range(len(rdic))] for j in range(len(input_documents))]
+
+for i in range(len(input_documents)):
+    # print(docTFIDFdata[input_documents[i]])
+    # print(docTFIDFdata[input_documents[i]].keys())
+    for j in range(len(rdic)):
+        keysArr = docTFIDFdata[input_documents[i]].keys()
+        for key in keysArr:
+            if rdic[j] == key:
+                tfidfTable[i][j] = docTFIDFdata[input_documents[i]][key]
+
+# print(tfidfTable)
+
 resKey = []
+res = []
 
-for i in range(len(allNumArr)):
-    for j in range(i+1, 10):
-        title = 'S' + str(i) + ':' + 'E' + str(j)
+for i in range(len(input_documents)):
+    for j in range(i + 1, len(input_documents)):
+        title = str(i+1) + ':' + str(j+1)
         resKey.append(title)
-        x = np.array(allNumArr[i])
-        y = np.array(allNumArr[j])
+        x = np.array(tfidfTable[i])
+        y = np.array(tfidfTable[j])
         res.append(cos_sim(x, y))
 
-# print(res)
-# print(resKey)
+propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
+print(propSort)
 
-print(dict(zip(resKey, res)))
+print()
+print()
+
+keySort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[1])
+print(keySort)

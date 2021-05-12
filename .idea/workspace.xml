@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c727b5-9dba-4ffc-a4cc-a338969bd07d" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caltfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/caltfidf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_tfidf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +11,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sL14GJiTckqQaG79QPjsIEbiIn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620655268434</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="5-11">
+      <created>1620691219582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620691219582</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="5-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="5-10" />
+    <MESSAGE value="5-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="5-11" />
   </component>
 </project>
