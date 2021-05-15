@@ -23,11 +23,11 @@ for i in range(len(input_documents)):
     # print(docTFIDFdata[input_documents[i]].keys())
     for j in range(len(rdic)):
         keysArr = docTFIDFdata[input_documents[i]].keys()
+        # print(keysArr)
         for key in keysArr:
             if rdic[j] == key:
                 tfidfTable[i][j] = docTFIDFdata[input_documents[i]][key]
 
-# print(tfidfTable)
 
 resKey = []
 res = []
