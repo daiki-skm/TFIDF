@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8c727b5-9dba-4ffc-a4cc-a338969bd07d" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLTK-Tag-PY/input.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLTK-Tag-PY/outcontents.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLTK-Tag-PY/testNLTK.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/caltfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/caltfidf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getTextFromHTML-Request-FileOut.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_tfidf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outcontents.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="f8c727b5-9dba-4ffc-a4cc-a338969bd07d" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
