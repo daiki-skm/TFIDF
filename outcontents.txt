@@ -1,6 +1,8 @@
 
 
 
+    Black Lives Matter.
+    Support the Equal Justice Initiative.
 
 
 
@@ -8,645 +10,255 @@
 
 
 
+Documents
+Packages
+The Project
+Help
+Blog
+Play
 
 
 
 
 
-短期大学部
 
+    Documentation
+    
 
 
-交通アクセス
-サイトマップ
-お問い合わせ
 
+The Go programming language is an open source project to make programmers more
+productive.
 
 
+Go is expressive, concise, clean, and efficient. Its concurrency
+mechanisms make it easy to write programs that get the most out of multicore
+and networked machines, while its novel type system enables flexible and
+modular program construction. Go compiles quickly to machine code yet has the
+convenience of garbage collection and the power of run-time reflection. It's a
+fast, statically typed, compiled language that feels like a dynamically typed,
+interpreted language.
 
 
+Getting started
+Installing Go
 
+Instructions for downloading and installing Go.
 
+Tutorial: Getting started
 
+A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, packages, and modules.
 
+Tutorial: Create a module
 
+A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
 
+Writing Web Applications
 
+Building a simple web application.
 
-English
+How to write Go code
 
+This doc explains how to develop a simple set of Go packages inside a module,
+and it shows how to use the go command
+to build and test packages.
 
 
-受験生･保護者の方
-卒業生の方
-一般･企業の方
-在学生･教職員の方
 
+A Tour of Go
 
 
+An interactive introduction to Go in three sections.
+The first section covers basic syntax and data structures; the second discusses
+methods and interfaces; and the third introduces Go's concurrency primitives.
+Each section concludes with a few exercises so you can practice what you've
+learned. You can take the tour
+online or install it locally with:
 
 
+$ go get golang.org/x/tour
 
 
+This will place the tour binary in your workspace's bin directory.
 
+Using and understanding Go
+Effective Go
 
+A document that gives tips for writing clear, idiomatic Go code.
+A must read for any new Go programmer. It augments the tour and
+the language specification, both of which should be read first.
 
+Editor plugins and IDEs
 
+A document that summarizes commonly used editor plugins and IDEs with
+Go support.
 
-大学案内
-カリキュラム
-入試情報
-キャンパスライフ
-進路就職
-大学院
-研究活動
-募集要項･資料請求
+Diagnostics
 
+Summarizes tools and methodologies to diagnose problems in Go programs.
 
+Managing dependencies
 
+When your code uses external packages, those packages (distributed as modules) become dependencies.
 
+Developing modules
+Developing and publishing modules
 
+You can collect related packages into modules, then publish the modules for other developers to use. This topic gives an overview of developing and publishing modules.
 
+Module release and versioning workflow
 
+When you develop modules for use by other developers, you can follow a workflow that helps ensure a reliable, consistent experience for developers using the module. This topic describes the high-level steps in that workflow.
 
+Managing module source
 
+When you're developing modules to publish for others to use, you can help ensure that your modules are easier for other developers to use by following the repository conventions described in this topic.
 
-toggle navigation
+Developing a major version update
 
+A major version update can be very disruptive to your module's users because it includes breaking changes and represents a new module. Learn more in this topic.
 
+Publishing a module
 
+When you want to make a module available for other developers, you publish it so that it's visible to Go tools. Once you've published the module, developers importing its packages will be able to resolve a dependency on the module by running commands such as go get.
 
+Module version numbering
 
+A module's developer uses each part of a module's version number to signal the version’s stability and backward compatibility. For each new release, a module's release version number specifically reflects the nature of the module's changes since the preceding release.
 
+Frequently Asked Questions (FAQ)
 
+Answers to common questions about Go.
 
+References
+Package Documentation
 
+The documentation for the Go standard library.
 
+Command Documentation
 
+The documentation for the Go tools.
 
+Language Specification
 
+The official Go Language specification.
 
-短期大学部
+Go Modules Reference
 
+A detailed reference manual for Go's dependency management system.
 
-大学案内
-カリキュラム
-入試情報
-キャンパスライフ
-進路就職
-大学院
-研究活動
-募集要項･資料請求
+go.mod file reference
 
+Reference for the directives included in a go.mod file.
 
-交通アクセス
-サイトマップ
-お問い合わせ
-English
+The Go Memory Model
 
+A document that specifies the conditions under which reads of a variable in
+one goroutine can be guaranteed to observe values produced by writes to the
+same variable in a different goroutine.
 
-受験生･保護者の方
-卒業生の方
-一般･企業の方
-在学生･教職員の方
+Release History
+A summary of the changes between Go releases.
+Codewalks
 
+Guided tours of Go programs.
 
 
+First-Class Functions in Go
+Generating arbitrary text: a Markov chain algorithm
+Share Memory by Communicating
 
+From the Go Blog
+The official blog of the Go project, featuring news and in-depth articles by
+the Go team and guests.
+Language
 
+JSON-RPC: a tale of interfaces
+Go's Declaration Syntax
+Defer, Panic, and Recover
+Go Concurrency Patterns: Timing out, moving on
+Go Slices: usage and internals
+A GIF decoder: an exercise in Go interfaces
+Error Handling and Go
+Organizing Go code
 
+Packages
 
+JSON and Go - using the json package.
+Gobs of data - the design and use of the gob package.
+The Laws of Reflection - the fundamentals of the reflect package.
+The Go image package - the fundamentals of the image package.
+The Go image/draw package - the fundamentals of the image/draw package.
 
+Modules
 
+Using Go Modules - an introduction to using modules in a simple project.
+Migrating to Go Modules - converting an existing project to use modules.
+Publishing Go Modules - how to make new versions of modules available to others.
+Go Modules: v2 and Beyond - creating and publishing major versions 2 and higher.
+Keeping Your Modules Compatible - how to keep your modules compatible with prior minor/patch versions.
 
+Tools
 
+About the Go command - why we wrote it, what it is, what it's not, and how to use it.
+Debugging Go Code with GDB
+Data Race Detector - a manual for the data race detector.
+A Quick Guide to Go's Assembler - an introduction to the assembler used by Go.
+C? Go? Cgo! - linking against C code with cgo.
+Godoc: documenting Go code - writing good documentation for godoc.
+Profiling Go Programs
+Introducing the Go Race Detector - an introduction to the race detector.
 
-動画を再生するには、videoタグをサポートしたブラウザーが必要です。
+Wiki
 
+The Go Wiki, maintained by the Go community, includes articles about the Go language, tools, and other resources.
 
 
+See the Learn page at the Wiki
+for more Go learning resources.
 
+Talks
 
+A Video Tour of Go
 
+Three things that make Go fast, fun, and productive:
+interfaces, reflection, and concurrency. Builds a toy web crawler to
+demonstrate these.
 
+Code that grows with grace
 
+One of Go's key design goals is code adaptability; that it should be easy to take a simple design and build upon it in a clean and natural way. In this talk Andrew Gerrand describes a simple "chat roulette" server that matches pairs of incoming TCP connections, and then use Go's concurrency mechanisms, interfaces, and standard library to extend it with a web interface and other features. While the function of the program changes dramatically, Go's flexibility preserves the original design as it grows.
 
-×
+Go Concurrency Patterns
 
+Concurrency is the key to designing high performance network services. Go's concurrency primitives (goroutines and channels) provide a simple and efficient means of expressing concurrent execution. In this talk we see how tricky concurrency problems can be solved gracefully with simple Go code.
 
+Advanced Go Concurrency Patterns
 
+This talk expands on the Go Concurrency Patterns talk to dive deeper into Go's concurrency primitives.
 
+More
 
-×
+See the Go Talks site and wiki page for more Go talks.
 
+Non-English Documentation
 
+See the NonEnglish page
+at the Wiki for localized
+documentation.
 
 
 
-×
 
 
 
 
+Copyright
+Terms of Service
+Privacy Policy
+Report a website issue
 
-×
-
-
-
-
-
-×
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-会津大学の学び
-｢コンピュータ理工学｣とは
-
-
-
-皆さんは、“コンピュータ”と聞いてどんなものを想像しますか？私たちの生活は、多くの“コンピュータ”の活躍で成り立っています。会津大学の「コンピュータ理工学」は、“コンピュータ”を経由して、あらゆる分野にアプローチすることができます。「何に」アプローチするのか。あなたの答えを会津大学で探してみてください。
-
-
-
-
-
-
-
-ネットワーク
-
-
-
-
-
-
-システム設計
-
-
-
-
-
-
-宇宙
-
-
-
-
-
-
-プログラミング
-
-
-
-
-
-
-環境
-
-
-
-
-
-
-ロボット
-
-
-
-
-
-
-知能システム
-
-
-
-
-
-
-ソフトウェア
-
-
-
-
-
-
-芸術
-
-
-
-
-
-
-医療
-
-
-
-
-
-
-
-
-
-
-
-トピックス
-
-
-
-
-
-
-
-グローバル推進本部嘱託員（グローバル推進員）の募集について
-グローバル推進本部嘱託員（グローバル推進員）の募集について
- 
-会津大学グローバル推進本部では、嘱託員（グローバル推進員）を下記により募集しています。
- 
-１　募集職名及び人員
-　　嘱託員（グローバル ...
-続きを読む
-
-
-
-
-
-
-
-
-
-大竹教授が科学技術分野の文部科学大臣表彰　表彰式に出席しました
-　2021年4月14日(水)に本学の大竹真紀子教授(※1)が令和3年度科学技術分野の文部科学大臣表彰（科学技術振興部門）表彰式(※2)に出席しました。
-<大竹教授コメント>　今回、表彰式に ...
-続きを読む
-
-
-
-
-
-
-
-
-
-研究開発室使用者募集　【２０２１年５月２５日（火）まで書類必着】
-UBIC研究開発室入居者募集について
-この度、会津大学産学イノベーションセンターの「研究開発室」に空きが出たため、下記のとおり使用者を公募しています。詳細は、http://www.ubic-u-aiz ...
-続きを読む
-
-
-
-
-
-
-
-
-
-新型コロナウイルス感染症（COVID-19）対応に関連する重要なお知らせ
-
-
-
- 新型コロナウイルス感染症（COVID-19）対応に関連する重要なお知らせ
--->
-
-　本学においては、学生・教職員に対し、新型コロナウイルス感染症（COVID-19）に関連する注意喚起や重要情 ...
-続きを読む
-
-
-
-
-
-
-
-
-
-特別プロジェクト支援者（復興支援センター）の募集について
-特別プロジェクト支援者（復興支援センター）の募集について
-会津大学では特別プロジェクト支援者を下記により募集しています。
-１　募集職名及び人員　　特別プロジェクト支援者（パートタイム）　１名
-２　勤務 ...
-続きを読む
-
-
-
-
-
-
-
-
-
-会津大学女性のためのITキャリアアップ塾　2021年度受講生を募集します
-
-　会津大学では、福島県内での就業又は起業を目指す女性を対象に、「eラーニング講座」による学習をメインとした講座「会津大学女性のためのＩＴキャリアアップ塾」の受講生を募集しています。　
-　この講座は、 ...
-続きを読む
-
-
-
-
-
-
-
-
-
-株式会社石川製作所様と株式会社タマテック様より小惑星リュウグウの金属模型が贈呈されました
-　2021年4月16日（金）に、はやぶさ２プロジェクトに携わった(株) 石川製作所　須藤 儀一様(※1)と(株)タマテック　吉田 武様(※2)が本学を訪問し、製作した小惑星リュウグウの金属模型を本学の ...
-続きを読む
-
-
-
-
-
-
-
-
-
-中村上級准教授が福島県警察サイバー犯罪対策アドバイザーの委嘱を受けました
-　2021年4月22日(木)、本学の中村章人上級准教授(情報セキュリティ学講座)(※)が、「福島県警察サイバー犯罪対策アドバイザー」を委嘱され、会津大学にて福島県警察本部 冨塚法雄 生活安全部長から委 ...
-続きを読む
-
-
-
-
-
-
-
-
-
-会津大学の教員が令和3年度科学技術分野の文部科学大臣表彰を受賞しました
-　会津大学の大竹真紀子教授が、令和3年度科学技術分野の文部科学大臣表彰（科学技術振興部門）を受賞することが決定しました。(※1)　この賞は、科学技術に関する研究開発、理解増進等において顕著な成果を収め ...
-続きを読む
-
-
-
-
-
-
-
-
-
-会津産学懇話会様から学生支援の寄附金をいただきました
-　2021年4月7日(水) に開催された会津産学懇話会(※1)定例会で、大内重行会長から宮崎理事長兼学長に学生生活支援(※2)寄附金が贈呈されました。　大内会長から学生への激励のお言葉をいただき、宮崎 ...
-続きを読む
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-イベント
-一覧を見る
-
-
-
-
-
-ロボットシミュレータChoreonoid講習会
-
-日時2021年02月19日（金） 10:00 〜 17:00
-会場Zoomでのオンライン開催
-
-
-一般
-卒業生
-在学生
-
-
-
-
-
-2nd International Conference on Educational Technology, Language & Technical Communication (ETLTC2021) 
-
-日時2021年01月27日（水） 〜2021年01月30日（土）
-会場会津大学
-
-
-一般
-卒業生
-在学生
-
-
-
-
-
-【2020/06/01 公開】第5回会津大学ロボットシンポジウム＠Virtual Spaceのお知らせ
-
-日時2020年06月01日（月） 〜2020年12月31日（木）
-
-
-一般
-在学生
-
-
-
-
-
-
-
-
-
-
-
-ニュース
-一覧を見る
-
-
-
-
-
-遠隔授業の実施期間延長について
-
-2021年05月14日
-
-
-
-＜締切間近＞公立大学法人会津大学職員採用試験（情報処理）について【2021年10月1日採用】
-
-2021年05月10日
-
-
-
-会津若松市における新型コロナウイルス感染症集中対策に伴う 遠隔授業の実施について
-
-2021年05月07日
-
-
-
-国際戦略室が実施するインターナショナル・トーク特別版「ドイツの学生生活について学ぼう！」が開催されます
-
-2021年04月23日
-
-
-
-会津若松市社会協議福祉会様による学生への食料支援について
-
-2021年04月22日
-
-
-
-会津食料支援実行委員会様による学生への食料支援について
-
-2021年04月19日
-
-
-
-RSS
-
-
-
-
-
-
-
-
-
-
-会津大学の取り組み
-
-
-
-グローバル化
-
-
-
-
-
-
-
-
-
-
-
-
-
-人材育成
-
-
-
-
-
-
-
-
-
-
-
-地域振興･産業創出
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-アクセス
-
-列車、高速道路、福島空港をご利用の場合の交通アクセス情報です。詳細な地図もこちらからご覧ください。
-交通アクセス
-
-
-
-
-
-
-お問い合わせ
-
-各種お問い合わせ先の一覧を掲載しています。フォームによるお問い合わせもご用意しています。
-お問い合わせ
-
-
-
-
-
-
-
-
-
-
-
-
-
-サイトポリシープライバシーポリシーサイトマップ
-
-
-
-
-
-
-
-
-
-
-
-会津大学
-〒965-8580　福島県会津若松市一箕町鶴賀　0242-37-2500（代表）
-
-
-
-
-© The University of Aizu. All rights reserved.
-
-
-
-
-
+Supported by Google
 
 
 

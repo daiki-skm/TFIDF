@@ -34,4 +34,9 @@ def cal_tfidf(input_documents):
 
 
 def cos_sim(v1, v2):
-    return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
+    normA = np.linalg.norm(v1)
+    normB = np.linalg.norm(v2)
+    if normA == 0 or normB == 0:
+        return 0
+    else:
+        return np.dot(v1, v2) / normA * normB
