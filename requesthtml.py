@@ -3,22 +3,40 @@ import bs4
 
 
 def get_article() -> None:
-    # res = requests.get('http://www.u-aizu.ac.jp')
-    # res = requests.get('https://www.nytimes.com/section/sports/basketball')
-    res = requests.get('https://golang.org/doc/')
+    url_arr = [
+        'https://golang.org/doc/',
+        'https://time.com/6050639/nba-covid19/',
+        'https://time.com/6049687/tokyo-olympics-cancel-doctors/',
+        'https://www.bbc.com/news/uk-politics-57198607',
+        'https://www.bbc.com/news/business-57154345',
+        'https://www.bbc.com/news/business-57171683',
+    ]
 
-    # status_code = res.status_code
-    # print('encoding = ', res.encoding)
-    # text = res.text
-    # print('Status: ', status_code)
-    # print('Contents: ', text)
-    # print(res.content)
+    flag = 0
 
-    content_type_encoding = res.encoding if res.encoding != 'ISO-8859-1' else None
-    bs = bs4.BeautifulSoup(res.content, 'html.parser', from_encoding=content_type_encoding)
+    for url in url_arr:
+        res = requests.get(url)
+        # status_code = res.status_code
+        # print('encoding = ', res.encoding)
+        # text = res.text
+        # print('Status: ', status_code)
+        # print('Contents: ', text)
+        # print(res.content)
 
-    # Save to file
-    with open('outcontents.txt', 'w') as outf:
-         for i in bs.select('body'):
-            outf.write(i.getText())
-    outf.close()
+        content_type_encoding = res.encoding if res.encoding != 'ISO-8859-1' else None
+        bs = bs4.BeautifulSoup(res.content, 'html.parser', from_encoding=content_type_encoding)
+
+        # Save to file
+        if flag == 1:
+            with open('outcontents.txt', 'a') as outf:
+                for i in bs.select('body'):
+                    print(i.getText(), file=outf)
+            outf.close()
+        else:
+            with open('outcontents.txt', 'w') as outf:
+                for i in bs.select('body'):
+                    print(i.getText(), file=outf)
+            outf.close()
+            flag = 1
+
+# get_article()
