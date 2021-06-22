@@ -1,8 +1,8 @@
+from requesthtml import get_article
 from caltfidf import cal_tfidf
+from testnltk import get_nltk_word_list
 from caltfidf import cos_sim
 import numpy as np
-from testnltk import get_nltk_word_list
-from requesthtml import get_article
 
 
 get_article()
@@ -32,9 +32,9 @@ docTFIDFdata, _ = cal_tfidf(documents_list)
 
 nltkData = get_nltk_word_list()
 
-print('NLTK Word Table= ', nltkData)
-print()
-print()
+# print('NLTK Word Table= ', nltkData)
+# print()
+# print()
 
 tfidfTable = [[0.0 for i in range(len(nltkData))] for j in range(len(documents_list))]
 
@@ -67,14 +67,14 @@ for i in range(len(documents_list)):
         else:
             continue
 
-# print(resKey)
-# print(res)
+print(resKey)
+print(res)
 
-propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
-print(propSort)
-
-print()
-print()
-
-keySort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[1])
-print(keySort)
+# propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
+# print(propSort)
+#
+# print()
+# print()
+#
+# keySort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[1])
+# print(keySort)
