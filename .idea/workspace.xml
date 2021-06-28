@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c727b5-9dba-4ffc-a4cc-a338969bd07d" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/svm/getUrl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/caltfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/caltfidf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/createData.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/createData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svm/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svm/getFromFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/getFromFiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svm/getidxtfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/getidxtfidf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svm/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/nData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/svm/nData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/news.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/pData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/svm/pData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/scraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/scraping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
-def getidxTFIDF(docDataDic, dic, noTotaldata, docTFIDFdata, noPdata):
+def getidxTFIDF(docDataDic, dic, docTFIDFdata, noTotaldata, noPdata):
     docSize = len(docDataDic.keys())
     vocSize = len(dic)
     tfIDFval = [[0.0 for x in range(vocSize)] for y in range(docSize)]
