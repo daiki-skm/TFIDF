@@ -12,8 +12,8 @@ def getProcessedContentsByLineFromFiles(filep, filen):
             contentStringp.rstrip()
             sentencesp = sent_tokenize(contentStringp)
             sep_sentencesp = []
-            for sent1 in sentencesp:
-                tagged_token = word_tokenize(sent1)
+            for sentence in sentencesp:
+                tagged_token = word_tokenize(sentence)
                 tagged_words = nltk.pos_tag(tagged_token)
                 sep_sentence = " ".join(w for (w, t) in tagged_words if t.startswith('JJ') or t.startswith('NN') or t.startswith('VB') or t.startswith('RB'))
                 sep_sentencesp.append(sep_sentence)
@@ -27,8 +27,8 @@ def getProcessedContentsByLineFromFiles(filep, filen):
             contentStringn.rstrip()
             sentencesn = sent_tokenize(contentStringn)
             sep_sentencesn = []
-            for sent1 in sentencesn:
-                tagged_token = word_tokenize(sent1)
+            for sentence in sentencesn:
+                tagged_token = word_tokenize(sentence)
                 tagged_words = nltk.pos_tag(tagged_token)
                 sep_sentence = " ".join(w for (w, t) in tagged_words if t.startswith('JJ') or t.startswith('NN') or t.startswith('VB') or t.startswith('RB'))
                 sep_sentencesn.append(sep_sentence)

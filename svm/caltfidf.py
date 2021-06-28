@@ -6,7 +6,6 @@ from collections import defaultdict
 def cal_tfidf(docDataDic):
     N = len(docDataDic.keys())
 
-    # Calculating TFIDF
     docTFtable = defaultdict(Counter)
     DFtable = Counter()
     docTFIDFtable = defaultdict(Counter)

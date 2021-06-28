@@ -3,20 +3,16 @@ import collections
 
 
 def buildDictionaries(input_documents, docDataDic):
-    # Build words and counter
     words = "".join(input_documents).split()
     count = collections.Counter(words).most_common()
 
-    # Build dictionaries --> rdic, dic, docDataDic
     # rdic --- idx -> word
     # dic --- word -> id
     # docDataDic --- document -> id
 
-    # Word Dictionaries --> rdic, dic
-    rdic = [i[0] for i in count]  # reverse dic, idx -> word
+    rdic = [i[0] for i in count]
     print('Size of Dictionary = ', len(rdic))
-    dic = {w: i for i, w in enumerate(rdic)}  # dic, word -> id
-    # Document Dictionary --> docDataDic
+    dic = {w: i for i, w in enumerate(rdic)}
     for i, doc in enumerate(input_documents):
         v = docDataDic.get(doc)
         if v is None:

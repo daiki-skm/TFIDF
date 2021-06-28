@@ -12,19 +12,13 @@ def createTrainTestData(tfidfdata, rate, vocSize, docSize, noTotaldata, classDoc
         tfidfWithClass[i] = tfidfdata[i]
         tfidfWithClass[i].insert(0, int(classDoc[i]))
 
-    # tfidfWithClass[0] = tfidfdata[0]
-    # tfidfWithClass[0].insert(0, int(classDoc[0]))
-
     # print('tfidfWithClass = ', tfidfWithClass)
     # For Training Data
     seed(seedVal)
     train_idx_val = sample(list(enumerate(tfidfWithClass)), noTrain)
     total_indexes = [i for i in range(docSize)]
     train_indexes = []
-    test_indexes = []
-    forTestDataSet = []
     trainData = []
-    testData = []
     for idx, val in train_idx_val:
         train_indexes.append(idx)
         trainData.append(val)
@@ -32,10 +26,7 @@ def createTrainTestData(tfidfdata, rate, vocSize, docSize, noTotaldata, classDoc
     # print('train_indexes = ', train_indexes)
 
     # For Testing Data
-    # seed(seedVal)
-    # test_indexes = total_indexes - train_indexes
     test_indexes = [item for item in total_indexes if item not in train_indexes]
-    # print('test_indexes = ', test_indexes)
     forTestDataSet = [tfidfWithClass[i] for i in test_indexes]
     testData = sample(forTestDataSet, noTest)
 

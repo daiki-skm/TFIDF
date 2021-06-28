@@ -1,4 +1,3 @@
-from scraping import get_article
 from getFromFiles import getProcessedContentsByLineFromFiles
 from build import buildDictionaries
 from caltfidf import cal_tfidf
@@ -25,24 +24,38 @@ seedVal = 1            # seed value for random sampling
 dataColWidth = 100     # Width (number of column - features) for training and test data
 
 
-get_article()
-
 input_documents, lineContentsp, lineContentsn = getProcessedContentsByLineFromFiles(inFileNames[0], inFileNames[1])
 
 noPdata = len(lineContentsp)
 noNdata = len(lineContentsn)
 noTotaldata = len(input_documents)
 
-print('Size of Positive line document data = ', noPdata)
-print('Size of Negative line document data = ', noNdata)
-print('Size of Total line document data = ', noTotaldata)
+# print('Size of Positive line document data = ', noPdata)
+# print('Size of Negative line document data = ', noNdata)
+# print('Size of Total line document data = ', noTotaldata)
+
+# print("lineContentsp = ", lineContentsp)
+# print("lineContentsn = ", lineContentsn)
+# print("input_documents = ", input_documents)
 
 rdic, dic, docDataDic = buildDictionaries(input_documents, docDataDic)
 
+# print("rdic = ", rdic)
+# print("dic = ", dic)
+# print("docDataDic = ", docDataDic)
+
 docTFIDFdata = cal_tfidf(docDataDic)
+
+# print("docTFIDFdata = ", docTFIDFdata)
 
 tfidfval, docSize, vocSize, classDoc = getidxTFIDF(docDataDic, dic, noTotaldata, docTFIDFdata, noPdata)
 
+# print("tfidfval = ", tfidfval)
+# print("classDoc = ", classDoc)
+
 trainData, testData = createTrainTestData(tfidfval, trainRate, vocSize, docSize, noTotaldata, classDoc, seedVal)
+
+# print("trainData = ", trainData)
+# print("testData = ", testData)
 
 analysis(trainData, testData, dataColWidth)
