@@ -38,5 +38,3 @@ def get_article() -> None:
                     print(i.getText(), file=outf)
             outf.close()
             flag = 1
-
-# get_article()

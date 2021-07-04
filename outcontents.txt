@@ -101,6 +101,61 @@ Managing dependencies
 
 When your code uses external packages, those packages (distributed as modules) become dependencies.
 
+Accessing databases
+Tutorial: Accessing a relational database
+
+Introduces the basics of accessing a relational database using Go and the
+database/sql package in the standard library.
+
+Accessing relational databases
+
+An overview of Go's data access features.
+
+Opening a database handle
+
+You use the Go database handle to execute database operations. Once you open a
+handle with database connection properties, the handle represents a connection
+pool it manages on your behalf.
+
+Executing SQL statements that don't return data
+
+For SQL operations that might change the database, including SQL
+INSERT, UPDATE, and DELETE, you use
+Exec methods.
+
+Querying for data
+
+For SELECT statements that return data from a query, using the
+Query or QueryRow method.
+
+Using prepared statements
+
+Defining a prepared statement for repeated use can help your code run a bit
+faster by avoiding the overhead of re-creating the statement each time your
+code performs the database operation.
+
+Executing transactions
+
+sql.Tx exports methods representing transaction-specific semantics,
+including Commit and Rollback, as well as methods you
+use to perform common database operations.
+
+Cancelling in-progress database operations
+
+Using context.Context, you can
+have your application's function calls and services stop working early and
+return an error when their processing is no longer needed.
+
+Managing connections
+
+For some advanced programs, you might need to tune connection pool parameters
+or work with connections explicitly.
+
+Avoiding SQL injection risk
+
+You can avoid an SQL injection risk by providing SQL parameter values as
+sql package function arguments
+
 Developing modules
 Developing and publishing modules
 
@@ -306,19 +361,12 @@ Sign Out
 
 
 
-                                    Subscribe
+                                Subscribe
                           
 Subscribe
 
 
 
-
-
-
-
-The Kardashians Leave a Legacy of Blackfishing and Appropriation
-Video
-Newsletter
 
 
 
@@ -394,10 +442,6 @@ Sections
                     
  
 
-                      Personal Finance by NextAdvisor
-                    
- 
-
                       Business
                     
  
@@ -434,23 +478,7 @@ Sections
                     
  
 
-                      TIME 2030
-                    
- 
-
-                      Video
-                    
- 
-
-                      TIME100 Talks
-                    
- 
-
                       The TIME Vault
-                    
- 
-
-                      TIME for Health
                     
  
 
@@ -459,10 +487,6 @@ Sections
  
 
                       TIME Edge
-                    
- 
-
-                      Red Border: Branded Content by TIME
                     
  
 
@@ -488,19 +512,6 @@ Join Us
  
 
 
-Customer Care
-
-
-
-                      US & Canada
-                    
- 
-
-                      Global Help Center
-                    
- 
-
-
 Reach Out
 
 
@@ -514,6 +525,18 @@ Reach Out
  
 
                       Contact the Editors
+                    
+ 
+
+                      U.S. Customer Service
+                    
+ 
+
+                      E.U. Customer Service
+                    
+ 
+
+                      Asia Customer Service
                     
  
 
@@ -534,7 +557,7 @@ More
                     
  
 
-                      Terms of Use
+                      Terms of Service
                     
  
 
@@ -585,6 +608,9 @@ Connect with Us
 
 
 
+Oops...
+Looks like we can't find what you're looking for. 
+See if you can find it on the homepage or try searching below!
 
 
 
@@ -592,172 +618,10 @@ Connect with Us
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                                      Sports
-                                  
-
-
-
-
-
-                                      NBA
-                                  
-
-
-
-                              NBA Tells Head Coaches They Can Go Without Masks During Games
-                            
+Search
 
 
  
-NBA Tells Head Coaches They Can Go Without Masks During Games
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Miami Heat head coach Erik Spoelstra watches from the sideline during the first half of an NBA basketball game against the Detroit Pistons on May 16, 2021,
-Carlos Osorio—AP
-
-
- 
-
-
-
-
-
-                    By 
-                        
-                          TIM REYNOLDS / AP
-                        
-
-
-                  May 22, 2021 1:39 PM EDT
-                
-
-
-
-
-
-Just in time for the playoffs, the NBA told its head coaches Saturday they may work without masks during games if they have been fully vaccinated against the coronavirus. Assistant coaches and players will still be required to wear masks in the bench area. Head coaches may choose to go without masks after pre-game introductions through halftime, then again after halftime until the game concludes. The memo, sent Saturday morning just a few hours before the postseason opener between Miami and Milwaukee and obtained by The Associated Press, also said that head coaches will have to wear masks during halftime, during warmups and shootaround before the start of the third quarter and postgame. If opposing coaches choose to meet briefly on the court after a game, masks are encouraged.
-
-
-
-
-Coaches have needed to wear masks throughout games all season, and some even got calls from the NBA with a reminder to be more committed to keeping the masks over their nose and mouth. But for the playoffs, the league said it was making the mask change “to facilitate in-game coaching duties, and in light of vaccination rates among NBA head coaches” along with recent updated guidance from the Centers for Disease Control and Prevention. Coaches will still need to participate in the NBA’s testing regimens, the league said. Meanwhile, for the playoffs, the NBA is going to see its largest crowds of the season. Miami announced Saturday that, starting with Game 3 of its series against Milwaukee on Thursday, it has increased capacity to 17,000 fans — basically double what it was planning to have for the start of the playoffs. The Heat said the NBA, along with local government, approved increased seating capacity, and it would remain in place for the rest of the playoffs. The 17,000 fans represent roughly 85% of the building’s capacity in Miami. The Boston Celtics said they are increasing attendance limits for Game 3 of their series against Brooklyn on Friday, and that for Game 4 on May 30 they will be at “near full capacity.” New York planned on welcoming up to 15,000 fans for its playoff games at Madison Square Garden against Atlanta, with that series starting Sunday, and Utah is prepared to host 13,000 fans to start its series against Memphis, also beginning Sunday. “You don’t realize how much you miss them. … It’s just great to see things sort of getting back to normal,” Knicks coach Tom Thibodeau said. More changes could be coming as the playoffs go along. The NBA hasn’t ruled out the possibility of having buildings able to return to 100% capacity for the NBA Finals in July, and the league is planning to evaluate whether teams can increase their travel parties starting with the second round of the playoffs. ___ More AP NBA: https://apnews.com/hub/NBA and https://twitter.com/AP_Sports 
-
-
-
-
-
-
-
-
-
-
- 
-Subscribe to TIME
-
-
- 
-
-
-
-Get The Brief. Sign up to receive the top stories you need to know right now.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Please enter a valid email address.
-
-
-
-                                    * The request timed out and you did not successfully sign up. Please attempt to sign up again.
-                                  
-
-
-                                      Sign Up Now
-                                    
-
-
-An unexpected error has occurred with your sign up. Please try again later.
-
-
-
-Check the box if you do not wish to receive promotional offers via email from TIME.
-
-You can unsubscribe at any time. By signing up you are agreeing to our Terms of Service and Privacy Policy. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-
-
-
- 
-
-
-
-
-
-                              Thank you!
-                            
-                            For your security, we've sent a confirmation email to the address you entered. Click the link to confirm your subscription and begin receiving our newsletters. If you don't get the confirmation within 10 minutes, please check your spam folder.
-                          
- 
-Contact us at letters@time.com. 
-SHARE THIS STORY
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
 
 
 
@@ -771,36 +635,7 @@ SHARE THIS STORY
 
 
 
-
-
-
-
  
- 
-
-
-
-
-
-
-
-Read More From TIME
- 
-
-
-
-
-
-
-
-
-Related Stories
- 
-
-
-
-
-
 
 
 
@@ -808,66 +643,11 @@ Related Stories
 
 
 
-Read Next
+ 
 
 
 
-LeBron James' Foundation to Open New Akron Community Hub
-
-
-
-
-
-Next Up: Editor's Pick
-
-
-
-What America's Richest Ski Town's Handling of COVID-19 Shows
-
-
-
-
-
-
-
- EDIT POST
-
-
-
-
-
-
-
-
-
-
-You have reached your limit of 4 free articles.
-Get unlimited access to TIME.com.Subscribe and get 1 year for just $19.99.
-Subscribe Now
-Already a print subscriber? Go here to link your subscription.
-Need help? Visit our Help Center.
-
-
-Thank you for reading TIME. You have a limited number of free articles.
-You have 3 free articles left. Get 1 year for just $19.99.
-You have 2 free articles left. Get 1 year for just $19.99.
-You have 1 free article left. Get 1 year for just $19.99.
-This is your last free article. Get 1 year for just $19.99.
-
-Subscribe Now
-
-
-Subscribe Now
-
-              Start Now
-          
-
-
-
-
-
-
-
+ 
 
 
 
@@ -899,11 +679,6 @@ Subscribe Now
 
 
 
-                        Personal Finance by NextAdvisor
-                      
-
-
-
                         Business
                       
 
@@ -919,13 +694,13 @@ Subscribe Now
 
 
 
-
-
-
-
-
                         Ideas
                       
+
+
+
+
+
 
 
 
@@ -969,18 +744,13 @@ Subscribe Now
 
 
 
-
-
-
-
-
-                        Video
-                      
-
-
-
                         Masthead
                       
+
+
+
+
+
 
 
 
@@ -1019,17 +789,22 @@ Subscribe Now
 
 
 
-
-
-
-
-
-                        U.S. & Canada Customer Care
+                        U.S. Customer Service
                       
 
 
 
-                        Global Help Center
+                        E.U. Customer Service
+                      
+
+
+
+
+
+
+
+
+                        Asia Customer Service
                       
 
 
@@ -1048,9 +823,6 @@ Subscribe Now
 
           © 2021 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy (Your California Privacy Rights) and Do Not Sell My Personal Information. TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice. This site is protected by reCAPTCHA and the Google Privacy Policy   Terms of Service  apply. 
         
-
-
-
 
 
 
@@ -1102,19 +874,12 @@ Sign Out
 
 
 
-                                    Subscribe
+                                Subscribe
                           
 Subscribe
 
 
 
-
-
-
-
-The Kardashians Leave a Legacy of Blackfishing and Appropriation
-Video
-Newsletter
 
 
 
@@ -1190,10 +955,6 @@ Sections
                     
  
 
-                      Personal Finance by NextAdvisor
-                    
- 
-
                       Business
                     
  
@@ -1230,23 +991,7 @@ Sections
                     
  
 
-                      TIME 2030
-                    
- 
-
-                      Video
-                    
- 
-
-                      TIME100 Talks
-                    
- 
-
                       The TIME Vault
-                    
- 
-
-                      TIME for Health
                     
  
 
@@ -1255,10 +1000,6 @@ Sections
  
 
                       TIME Edge
-                    
- 
-
-                      Red Border: Branded Content by TIME
                     
  
 
@@ -1284,19 +1025,6 @@ Join Us
  
 
 
-Customer Care
-
-
-
-                      US & Canada
-                    
- 
-
-                      Global Help Center
-                    
- 
-
-
 Reach Out
 
 
@@ -1310,6 +1038,18 @@ Reach Out
  
 
                       Contact the Editors
+                    
+ 
+
+                      U.S. Customer Service
+                    
+ 
+
+                      E.U. Customer Service
+                    
+ 
+
+                      Asia Customer Service
                     
  
 
@@ -1330,7 +1070,7 @@ More
                     
  
 
-                      Terms of Use
+                      Terms of Service
                     
  
 
@@ -1381,6 +1121,9 @@ Connect with Us
 
 
 
+Oops...
+Looks like we can't find what you're looking for. 
+See if you can find it on the homepage or try searching below!
 
 
 
@@ -1388,177 +1131,10 @@ Connect with Us
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                                      Sports
-                                  
-
-
-
-
-
-                                      olympics
-                                  
-
-
-
-                              One of Japan's Top Medical Associations Wants the Olympics Canceled
-                            
+Search
 
 
  
-One of Japan's Top Medical Associations Wants the Olympics Canceled
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-In this May 17, 2021, file photo, demonstrators protest against the Tokyo 2020 Olympics in Tokyo.
-AP Photo/Koji Sasahara
-
-
- 
-
-
-
-
-
-                    By 
-                        
-                          STEPHEN WADE / AP
-                        
-
-
-                  May 19, 2021 12:47 AM EDT
-                
-
-
-
-
-
-TOKYO — The IOC and Tokyo Olympic organizers start three days of virtual meetings Wednesday and will run into some of the strongest medical-community opposition so far with the games set to open in just over eight weeks. The meetings are headed by IOC Vice President John Coates, who will attempt to again assure the Japanese population that the games will be “safe and secure.” Much of Japan, including Tokyo and Osaka, is under a state of emergency, which forced IOC President Thomas Bach to cancel a trip to Japan this month. Only about 1-2% of the population is fully vaccinated, and opposition to the Olympics is running at 60-80% in numerous polls.
-
-
-
-
-In one of the strongest statements so far, the 6,000-member Tokyo Medical Practitioners’ Association called for the Olympics to be canceled in a letter sent last week to Prime Minister Yoshihide Suga, Tokyo Governor Yuriko Koike, and Seiko Hashimoto, the head of the organizing committee. The letter was made public this week on the group’s website. “We believe the correct choice is to the cancel an event that has the possibility of increasing the numbers of infected people and deaths,” the letter said. “Viruses are spread by people’s movements. Japan will hold a heavy responsibility if the Olympics and Paralympics work to worsen the pandemic, increasing the number of those who must suffer and die.” The Olympics are to open on July 23. The Paralympics follow on Aug. 24. They are a financial imperative for the International Olympic Committee, which derives about 75% of its incomes from selling television rights and another 18% from sponsorship. Japan has officially spent $15.4 billion or organize the Olympics, although government audits suggest the figure is much higher. There is no indication the games will be canceled, though opposition continues with small street protests and online petition drives. Last month the British Medical Journal  came out against holding the Olympics. Japan has had more than 11,500 deaths from COVID-19. The Tokyo Medical Practitioners’ Association warned of a possible collapse of Japan’s medical system, which could come under more pressure with Tokyo’s hot and humid summer months approaching as the Olympics open. “Our nation is now undergoing a surge in coronavirus patients in a fourth wave, the worst so far,” the letter said. “The medical systems responding to COVID-19 are stretched thin, almost to their limits. The reality is that the entire medical system faces an almost insurmountable hardship in trying our best to respond with coronavirus measures.” Tokyo organizers have said about 10,000 medical personnel will be needed during the Olympics. They have also asked for 500 extra nurses, and 200 sports medicine specialists. Several prefectures near Tokyo have said they will not give priority to treating Olympic athletes. “The doctors and nurses of the medical system who are being asked to respond are already at this point exhausted, and there is absolutely no extra manpower or facility for treatment,” the letter added.
-
-
-
-
-Fans from abroad have already been banned, and Olympic organizers are expected to announce next month if local fans can attend in limited numbers. The Olympics and Paralympics will involve 15,000 athletes and tens of thousands of others entering Japan, which has had its borders virtually sealed for more than a year. ___ AP reporter Yuri Kageyama contributed to this report. 
-
-
-
-
-
-
-
-
-
-
- 
-Subscribe to TIME
-
-
- 
-
-
-
-Get The Brief. Sign up to receive the top stories you need to know right now.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Please enter a valid email address.
-
-
-
-                                    * The request timed out and you did not successfully sign up. Please attempt to sign up again.
-                                  
-
-
-                                      Sign Up Now
-                                    
-
-
-An unexpected error has occurred with your sign up. Please try again later.
-
-
-
-Check the box if you do not wish to receive promotional offers via email from TIME.
-
-You can unsubscribe at any time. By signing up you are agreeing to our Terms of Service and Privacy Policy. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-
-
-
- 
-
-
-
-
-
-                              Thank you!
-                            
-                            For your security, we've sent a confirmation email to the address you entered. Click the link to confirm your subscription and begin receiving our newsletters. If you don't get the confirmation within 10 minutes, please check your spam folder.
-                          
- 
-Contact us at letters@time.com. 
-SHARE THIS STORY
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
 
 
 
@@ -1572,36 +1148,7 @@ SHARE THIS STORY
 
 
 
-
-
-
-
  
- 
-
-
-
-
-
-
-
-Read More From TIME
- 
-
-
-
-
-
-
-
-
-Related Stories
- 
-
-
-
-
-
 
 
 
@@ -1609,66 +1156,11 @@ Related Stories
 
 
 
-Read Next
+ 
 
 
 
-Australia Is Nearly COVID-19 Free. Tokyo-Bound Olympic Surfers Are Reaping the Benefits
-
-
-
-
-
-Next Up: Editor's Pick
-
-
-
-America Needs to Get Back to Facts
-
-
-
-
-
-
-
- EDIT POST
-
-
-
-
-
-
-
-
-
-
-You have reached your limit of 4 free articles.
-Get unlimited access to TIME.com.Subscribe and get 1 year for just $19.99.
-Subscribe Now
-Already a print subscriber? Go here to link your subscription.
-Need help? Visit our Help Center.
-
-
-Thank you for reading TIME. You have a limited number of free articles.
-You have 3 free articles left. Get 1 year for just $19.99.
-You have 2 free articles left. Get 1 year for just $19.99.
-You have 1 free article left. Get 1 year for just $19.99.
-This is your last free article. Get 1 year for just $19.99.
-
-Subscribe Now
-
-
-Subscribe Now
-
-              Start Now
-          
-
-
-
-
-
-
-
+ 
 
 
 
@@ -1700,11 +1192,6 @@ Subscribe Now
 
 
 
-                        Personal Finance by NextAdvisor
-                      
-
-
-
                         Business
                       
 
@@ -1720,13 +1207,13 @@ Subscribe Now
 
 
 
-
-
-
-
-
                         Ideas
                       
+
+
+
+
+
 
 
 
@@ -1770,18 +1257,13 @@ Subscribe Now
 
 
 
-
-
-
-
-
-                        Video
-                      
-
-
-
                         Masthead
                       
+
+
+
+
+
 
 
 
@@ -1820,17 +1302,22 @@ Subscribe Now
 
 
 
-
-
-
-
-
-                        U.S. & Canada Customer Care
+                        U.S. Customer Service
                       
 
 
 
-                        Global Help Center
+                        E.U. Customer Service
+                      
+
+
+
+
+
+
+
+
+                        Asia Customer Service
                       
 
 
@@ -1857,15 +1344,12 @@ Subscribe Now
 
 
 
-
-
-
 BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsUK makes free-trade offer to Australia despite farmers' fearsPublished21 MaySharecloseShare pageCopy linkAbout sharingimage copyrightReutersimage captionAustralia's mining industry is a major driver of exports to the UKThe UK has offered trade deal terms to Australia under which both countries would phase out taxes on imports over 15 years.The cabinet was reportedly split on what terms to propose, amid concerns UK beef and lamb farmers could be undercut by larger Australian producers.But the dispute was apparently resolved after Boris Johnson pushed for unity.International Trade Secretary Liz Truss formally made the UK offer to her Australian counterpart on Friday.If accepted, it would also lead to quotas - limits - on tax-free trade between the two countries to be phased out.The National Farmers' Union (NFU) has warned that freeing up the UK-Australian trade in meat will lead to hundreds of British cow and sheep breeders going out of business.Why is an Australia trade deal controversial?How many trade deals has the UK done?Ministers are keen to strike as many trade deals as possible following Brexit, and Ms Truss wants one in place with Australia by the time the UK hosts the G7 summit - of leading economies - in June.But she had reportedly been at odds with Environment Secretary George Eustice over the possible impact on farmers of removing import taxes, called tariffs, that are normally paid to the government.With these differences seemingly resolved at a Downing Street meeting chaired by the prime minister on Thursday, Ms Truss put the UK's terms for a deal to Australian counterpart Dan Tehan at an online meeting on Friday.Speaking on a visit to Portsmouth, Mr Johnson said: "We are certainly looking at doing free trade deals around the world."They present a fantastic opportunity for our farmers, for businesses of all kinds, for our manufacturers. We should see these new openings not as threats but as opportunities."Mr Tehan said he was "confident" of reaching an agreement with the UK by early June, having had "very positive discussions" with Ms Truss, the news.com.au website reported.image copyrightReutersimage captionFarmers have raised concerns over competition from larger-scale Australian operatorsIn 2019-20, trade in goods and services between Australia and the UK was valued at £20.1bn, and both sides are hoping to expand this amount considerably.Currently, metals, wine and machines form the biggest goods exports from Australia to the UK, while Australia's main UK imports are cars, medicines and alcoholic drinks.Trade in meat between the two countries is small, with 0.15% of all Australian beef exports going to the UK and 14% of sheep meat imports to the UK coming from Australia. NFU president Minette Batters said removing tariffs on these products would "have a massive impact" on British farms, which would be unable to compete, in terms of scale, with Australia's vast cattle and sheep stations.She added: "We continue to maintain that a tariff-free trade deal with Australia will jeopardise our own farming industry and will cause the demise of many, many beef and sheep farms throughout the UK. This is true whether tariffs are dropped immediately or in 15 years' time."'Distinct advantages'The Scottish and Welsh governments have both urged Mr Johnson to ensure UK farmers are not left exposed.And Northern Ireland's agriculture minister, Edwin Poots, said he was "strongly opposed" to ending tariffs and quotas.But Conservative MP Neil Parish, chairman of the Commons Environment, Food and Rural Affairs Committee, said UK farmers could succeed in the beef market by exporting more "higher-end" cuts, such as sirloin, to Australia.A Department for International Trade spokesperson said: "Any deal we sign with Australia will include protections for the agriculture industry and will not undercut UK farmers or compromise our high standards."Typically, any tariff liberalisation is staged over time, with safeguards built in. We will continue to work with the industry, keeping them involved throughout the process and helping it capture the full benefits of trade."Are you a farmer in the UK? What are your thoughts on a free-trade deal? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
 
 
-If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsBoris JohnsonUK economyTradeTop StoriesEngland faces longer lockdown as easing delayedCapacity limits for sports events, pubs and cinemas will remain and nightclubs will stay closed.Published1 hour agoIsrael's new PM Bennett promises to unite nationPublished2 hours agoProducer resigns from New Zealand massacre moviePublished2 hours agoFeaturesHow China’s youth are shunning the rat race‘My little girls don’t know their mum died of Covid’'We make it or we die' Video'We make it or we die'What Putin really wants from BidenNetanyahu: A shrewd leader who reshaped IsraelTech firms use remote monitoring to help honey beesWhat happened when the Soviets tried to dig to the centre of the Earth?How Islamic State has expanded into Central AfricaFormer farmer, 84, is accidental ASMR YouTube star. VideoFormer farmer, 84, is accidental ASMR YouTube starElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadHead of 'world's largest family' dies in India1Lockdown easing in England to be delayed2Israel's new PM Bennett promises to unite nation3Producer resigns from New Zealand massacre movie4What Putin really wants from Biden5Banker and rapper face Trump-related probe charge6How China’s youth are shunning the rat race7Thousands join protests against Catalan pardons8Fan falls from stand at England's Euro opener9WhatsApp launches privacy campaign after backlash10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsBoris JohnsonUK economyTradeTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Critically endangered antelope makes comeback6Cyprus appeals for help as huge wildfire spreads7Swedish Coop stores shut due to huge cyber-attack8US police arrest armed group after stand-off9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
 BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryUK job vacancies highest for a year as lockdown easesPublished18 MaySharecloseShare pageCopy linkAbout sharingimage copyrightReutersUK job vacancies have hit their highest level since the start of the pandemic as the easing of lockdown measures has led employers to start recruiting.In the February-to-April period there were 657,000 vacancies, up about 48,400 on the previous quarter. The unemployment rate fell slightly to 4.8% in the three months to March, down from 4.9% in February, the Office for National Statistics said.The ONS said there were "early signs of recovery" in the jobs market,However, despite the rise in job vacancies over the past 12 months, the level remains almost 128,000 below its pre-pandemic level in the January-to-March quarter of 2020.The official figures confirm several reports in recent weeks by recruitment companies that they are seeing a rise in job advertisements, leading to concern among some employers that they could face staff shortages.UK economy set to grow at fastest rate in 70 yearsAre you currently unemployed? Email haveyoursay@bbc.co.ukThe ONS said the number of workers on payrolls had risen by 97,000 between March and April, but was still 772,000 lower than before the pandemic struck.Darren Morgan, ONS director of economic statistics, said the number of employees on payroll "rose strongly in April" as the economy began to reopen, continuing an improvement from its November trough.But he said: "There remains, however, three-quarters of a million people fewer on the payroll compared with the pre-pandemic peak."With many businesses reopening, the recent recovery in job vacancies continued into April, especially in sectors such as hospitality and entertainment."Chancellor Rishi Sunak said the latest figures showed the impact of the government's focus on protecting jobs during the pandemic."While sadly not every job can be saved, nearly two million fewer people are now expected to be out of work than initially expected - showing our Plan for Jobs is working."Business leaders welcomed the vacancy levels as positive signs for the economy, but warned there was still a long way to go.'I've applied for 500 jobs'As many experts have pointed out, Tuesday's positive jobs news does not disguise that many people in the labour market are still struggling. Interior designer Sheila Smith lost her job working for hospitality venues in October - and despite some 500 applications is still unemployed.She worries that businesses are looking for someone younger and cheaper than her. "I've been for a few interviews, which I haven't been successful at," she told the BBC.She said the most frustrating aspect of the job search was the lack of communication from potential employers."When you take time to go for a job interview, get yourself prepared, but then you hear nothing back - that's the most frustrating thing."Although the number of job vacancies is rising, they are still well down on pre-pandemic levels and Sheila reckons there's about 200 people applying for each post advertised."It destroys your confidence," she said. "I've worked solidly for years in the industry, and you find yourself in this situation scrambling for jobs."You feel like you're stuck at square one."Matthew Percival, director of people and skills at the CBI business lobby group, said: "Businesses are starting to report vacancies they're struggling to fill so government support for skills and retraining is essential."He added that companies still needed clarity over the rules for the next stage of reopening the economy, which is currently planned for 21 June.Research consultancy Capital Economics said the fall in the jobless rate showed that the jobs furlough scheme was "insulating the labour market".The firm added that although it expects the unemployment rate to rise over the next few months, that would most likely be due to people returning to the labour market rather than people losing their jobs.The most encouraging sign here is that vacancies over the three months to April averaged 657,000. The ONS said its experimental monthly vacancy statistics for April itself were "at near pre-pandemic levels". There are increasing numbers of employers expressing concern about recruitment difficulties.The jobs data continue to show some signs of resilience and recovery, with unemployment down again to 4.8%, and employment up for the fifth consecutive month. It's so far a slow recovery based on gradual re-openings seen up until last month.The pattern is, though, as uneven as the lifting of the restrictions. Hospitality and retail jobs are still well down on pre-pandemic levels, and this means all of the loss in payrolled jobs and more can currently be explained by what has happened to young workers. There are still over four million workers on the furlough scheme, who count as employed.Are you currently unemployed? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
 
 
-If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsOffice for National StatisticsUK economyUnemploymentYouth unemploymentMore on this storyUK economy set to grow at fastest rate in 70 yearsPublished6 MayOlder workers 'see biggest jobs fall since 1980s'Published26 AprilTop StoriesEngland faces longer lockdown as easing delayedCapacity limits for sports events, pubs and cinemas will remain and nightclubs will stay closed.Published1 hour agoIsrael's new PM Bennett promises to unite nationPublished2 hours agoProducer resigns from New Zealand massacre moviePublished2 hours agoFeaturesHow China’s youth are shunning the rat race‘My little girls don’t know their mum died of Covid’'We make it or we die' Video'We make it or we die'What Putin really wants from BidenNetanyahu: A shrewd leader who reshaped IsraelTech firms use remote monitoring to help honey beesWhat happened when the Soviets tried to dig to the centre of the Earth?How Islamic State has expanded into Central AfricaFormer farmer, 84, is accidental ASMR YouTube star. VideoFormer farmer, 84, is accidental ASMR YouTube starElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadHead of 'world's largest family' dies in India1Lockdown easing in England to be delayed2Israel's new PM Bennett promises to unite nation3Producer resigns from New Zealand massacre movie4What Putin really wants from Biden5Banker and rapper face Trump-related probe charge6How China’s youth are shunning the rat race7Thousands join protests against Catalan pardons8Fan falls from stand at England's Euro opener9WhatsApp launches privacy campaign after backlash10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
-BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryHouse prices climb at highest rate since before credit crunchPublished19 MaycommentsCommentsSharecloseShare pageCopy linkAbout sharingRelated TopicsCoronavirus pandemicimage copyrightGetty ImagesAverage UK house prices soared by 10.2% in the year to March, the highest annual growth rate for 14 years, according to official figures.The Office for National Statistics said average prices rose by £24,000 to £256,000 - a new record high.Prices have been pushed up by the temporary stamp duty reduction, low interest rates, as well as people wanting more space after lockdown.Hargreaves Lansdown analyst Sarah Coles warned the market risked overheating."We're back to the kind of double-figure house price rises we saw in the heady days before the financial crisis [of 2008]," the analyst said. "And while lenders are far more cautious than they were back in 2007, in this kind of market, there's still the risk buyers will lose their heads, and make a property mistake that could haunt them for years."'Huge inequalities'Anna Clare Harper, chief executive of asset manager SPI Capital, said the sharp rise in prices would mean fewer people were able to afford new homes."The effects are clear: with wages rising significantly more slowly than house prices, affordability constraints are increasing," she said."This is creating huge inequalities between older and younger generations, and growing demand from both younger and older renters who are priced out."For first-time buyers, this is a hideous market," she added. "With average prices up £24,000 in a year, saving a 10% deposit needs £2,400 extra in savings."image copyrightPA MediaTax breaksTax breaks introduced during the pandemic to boost the housing market had a marked effect over the period. The ONS report said: "Changes in the tax paid on housing transactions may have allowed sellers to request higher prices as the buyers' overall costs are reduced."A stamp duty holiday in England and Northern Ireland, which had been due to end in March, was recently extended.In Wales, a holiday on the equivalent tax has also been extended until the end of June 2021.A similar property transaction tax in Scotland ended on 31 March 2021."The extension of the stamp duty holiday helped ensure this won't be the last of the record months this year," said Sarah Coles.'Fear of missing out' fuels record house pricesUK housing market 'on the boil' as prices riseAverage house prices increased over the year in England to £275,000, a 10.2% annual increase.In Wales prices climbed 11% to £185,000, in Scotland 10.6% to £167,000 and in Northern Ireland they were up 6% to £149,000.In England, Yorkshire and the Humber had the highest annual house price growth, up 14% in the year to March.The lowest annual growth was in London, where average prices increased by 3.7% over the year.However, London's average house prices remained the most expensive of any region in the UK at an average of £500,000.Different propertyThe figures also suggested a switch in demand for different types of property.The average price of detached properties increased by 11.7% in the year to March 2021, while flats and maisonettes were up just 5.0% over the period."The demand for a new type of home, coupled with the government's mortgage guarantee scheme, will continue to support transaction levels in the months ahead, and potentially in the medium-term," said Andrew Montlake, managing director of independent mortgage broker Coreco. "Everything has changed due to the pandemic and that change will play out over several years yet."View commentsRelated TopicsUK economyHousing marketCoronavirus pandemicMore on this story'Fear of missing out' fuels record house pricesPublished10 MayUK housing market 'on the boil' as prices risePublished30 AprilTop StoriesEngland faces longer lockdown as easing delayedCapacity limits for sports events, pubs and cinemas will remain and nightclubs will stay closed.Published1 hour agoIsrael's new PM Bennett promises to unite nationPublished2 hours agoProducer resigns from New Zealand massacre moviePublished2 hours agoFeaturesHow China’s youth are shunning the rat race‘My little girls don’t know their mum died of Covid’'We make it or we die' Video'We make it or we die'What Putin really wants from BidenNetanyahu: A shrewd leader who reshaped IsraelTech firms use remote monitoring to help honey beesWhat happened when the Soviets tried to dig to the centre of the Earth?How Islamic State has expanded into Central AfricaFormer farmer, 84, is accidental ASMR YouTube star. VideoFormer farmer, 84, is accidental ASMR YouTube starElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadHead of 'world's largest family' dies in India1Lockdown easing in England to be delayed2Israel's new PM Bennett promises to unite nation3Producer resigns from New Zealand massacre movie4What Putin really wants from Biden5Banker and rapper face Trump-related probe charge6How China’s youth are shunning the rat race7Thousands join protests against Catalan pardons8Fan falls from stand at England's Euro opener9WhatsApp launches privacy campaign after backlash10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsOffice for National StatisticsUK economyUnemploymentYouth unemploymentMore on this storyUK economy set to grow at fastest rate in 70 yearsPublished6 MayOlder workers 'see biggest jobs fall since 1980s'Published26 AprilTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Cyprus appeals for help as huge wildfire spreads6Critically endangered antelope makes comeback7US police arrest armed group after stand-off8Swedish Coop stores shut due to huge cyber-attack9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryHouse prices climb at highest rate since before credit crunchPublished19 MaycommentsCommentsSharecloseShare pageCopy linkAbout sharingRelated TopicsCoronavirus pandemicimage copyrightGetty ImagesAverage UK house prices soared by 10.2% in the year to March, the highest annual growth rate for 14 years, according to official figures.The Office for National Statistics said average prices rose by £24,000 to £256,000 - a new record high.Prices have been pushed up by the temporary stamp duty reduction, low interest rates, as well as people wanting more space after lockdown.Hargreaves Lansdown analyst Sarah Coles warned the market risked overheating."We're back to the kind of double-figure house price rises we saw in the heady days before the financial crisis [of 2008]," the analyst said. "And while lenders are far more cautious than they were back in 2007, in this kind of market, there's still the risk buyers will lose their heads, and make a property mistake that could haunt them for years."'Huge inequalities'Anna Clare Harper, chief executive of asset manager SPI Capital, said the sharp rise in prices would mean fewer people were able to afford new homes."The effects are clear: with wages rising significantly more slowly than house prices, affordability constraints are increasing," she said."This is creating huge inequalities between older and younger generations, and growing demand from both younger and older renters who are priced out."For first-time buyers, this is a hideous market," she added. "With average prices up £24,000 in a year, saving a 10% deposit needs £2,400 extra in savings."image copyrightPA MediaTax breaksTax breaks introduced during the pandemic to boost the housing market had a marked effect over the period. The ONS report said: "Changes in the tax paid on housing transactions may have allowed sellers to request higher prices as the buyers' overall costs are reduced."A stamp duty holiday in England and Northern Ireland, which had been due to end in March, was recently extended.In Wales, a holiday on the equivalent tax has also been extended until the end of June 2021.A similar property transaction tax in Scotland ended on 31 March 2021."The extension of the stamp duty holiday helped ensure this won't be the last of the record months this year," said Sarah Coles.'Fear of missing out' fuels record house pricesUK housing market 'on the boil' as prices riseAverage house prices increased over the year in England to £275,000, a 10.2% annual increase.In Wales prices climbed 11% to £185,000, in Scotland 10.6% to £167,000 and in Northern Ireland they were up 6% to £149,000.In England, Yorkshire and the Humber had the highest annual house price growth, up 14% in the year to March.The lowest annual growth was in London, where average prices increased by 3.7% over the year.However, London's average house prices remained the most expensive of any region in the UK at an average of £500,000.Different propertyThe figures also suggested a switch in demand for different types of property.The average price of detached properties increased by 11.7% in the year to March 2021, while flats and maisonettes were up just 5.0% over the period."The demand for a new type of home, coupled with the government's mortgage guarantee scheme, will continue to support transaction levels in the months ahead, and potentially in the medium-term," said Andrew Montlake, managing director of independent mortgage broker Coreco. "Everything has changed due to the pandemic and that change will play out over several years yet."View commentsRelated TopicsUK economyHousing marketCoronavirus pandemicMore on this story'Fear of missing out' fuels record house pricesPublished10 MayUK housing market 'on the boil' as prices risePublished30 AprilTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Cyprus appeals for help as huge wildfire spreads6Critically endangered antelope makes comeback7US police arrest armed group after stand-off8Swedish Coop stores shut due to huge cyber-attack9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.

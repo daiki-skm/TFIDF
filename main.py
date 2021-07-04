@@ -1,6 +1,6 @@
 from requesthtml import get_article
 from caltfidf import cal_tfidf
-from testnltk import get_nltk_word_list
+from wordlist import get_nltk_word_list
 from caltfidf import cos_sim
 import numpy as np
 
@@ -70,8 +70,8 @@ for i in range(len(documents_list)):
 print(resKey)
 print(res)
 
-# propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
-# print(propSort)
+propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
+print(propSort)
 #
 # print()
 # print()
