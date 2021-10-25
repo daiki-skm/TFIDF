@@ -21,10 +21,7 @@ Play
 
 
 
-
-    Documentation
-    
-
+Documentation
 
 
 The Go programming language is an open source project to make programmers more
@@ -53,6 +50,11 @@ Tutorial: Create a module
 
 A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
 
+Tutorial: Developing a RESTful
+    API with Go and Gin
+
+Introduces the basics of writing a RESTful web service API with Go and the Gin Web Framework.
+
 Writing Web Applications
 
 Building a simple web application.
@@ -76,10 +78,11 @@ learned. You can take the tour
 online or install it locally with:
 
 
-$ go get golang.org/x/tour
+$ go install golang.org/x/website/tour@latest
 
 
-This will place the tour binary in your workspace's bin directory.
+This will place the tour binary in your
+GOPATH's bin directory.
 
 Using and understanding Go
 Effective Go
@@ -338,6 +341,18 @@ Supported by Google
 
 
 
+Connect Wallet
+
+
+
+Wallet Connected 
+Disconnect Wallet
+MetaMask 
+WalletConnect 
+
+ 
+
+
 
 
 
@@ -361,8 +376,8 @@ Sign Out
 
 
 
-                                Subscribe
-                          
+                                  Subscribe
+                            
 Subscribe
 
 
@@ -442,6 +457,10 @@ Sections
                     
  
 
+                      Personal Finance by NextAdvisor
+                    
+ 
+
                       Business
                     
  
@@ -478,7 +497,23 @@ Sections
                     
  
 
+                      TIME 2030
+                    
+ 
+
+                      Video
+                    
+ 
+
+                      TIME100 Talks
+                    
+ 
+
                       The TIME Vault
+                    
+ 
+
+                      TIME for Health
                     
  
 
@@ -487,6 +522,10 @@ Sections
  
 
                       TIME Edge
+                    
+ 
+
+                      Red Border: Branded Content by TIME
                     
  
 
@@ -512,6 +551,19 @@ Join Us
  
 
 
+Customer Care
+
+
+
+                      US & Canada
+                    
+ 
+
+                      Global Help Center
+                    
+ 
+
+
 Reach Out
 
 
@@ -525,18 +577,6 @@ Reach Out
  
 
                       Contact the Editors
-                    
- 
-
-                      U.S. Customer Service
-                    
- 
-
-                      E.U. Customer Service
-                    
- 
-
-                      Asia Customer Service
                     
  
 
@@ -557,7 +597,7 @@ More
                     
  
 
-                      Terms of Service
+                      Terms of Use
                     
  
 
@@ -821,7 +861,7 @@ Search
 
 
 
-          © 2021 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy (Your California Privacy Rights) and Do Not Sell My Personal Information. TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice. This site is protected by reCAPTCHA and the Google Privacy Policy   Terms of Service  apply. 
+          © 2021 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy (Your California Privacy Rights), Do Not Sell My Personal Information and TIMEPieces Terms and Conditions. TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice. This site is protected by reCAPTCHA and the Google Privacy Policy   Terms of Service  apply. 
         
 
 
@@ -851,6 +891,18 @@ Search
 
 
 
+Connect Wallet
+
+
+
+Wallet Connected 
+Disconnect Wallet
+MetaMask 
+WalletConnect 
+
+ 
+
+
 
 
 
@@ -874,8 +926,8 @@ Sign Out
 
 
 
-                                Subscribe
-                          
+                                  Subscribe
+                            
 Subscribe
 
 
@@ -955,6 +1007,10 @@ Sections
                     
  
 
+                      Personal Finance by NextAdvisor
+                    
+ 
+
                       Business
                     
  
@@ -991,7 +1047,23 @@ Sections
                     
  
 
+                      TIME 2030
+                    
+ 
+
+                      Video
+                    
+ 
+
+                      TIME100 Talks
+                    
+ 
+
                       The TIME Vault
+                    
+ 
+
+                      TIME for Health
                     
  
 
@@ -1000,6 +1072,10 @@ Sections
  
 
                       TIME Edge
+                    
+ 
+
+                      Red Border: Branded Content by TIME
                     
  
 
@@ -1025,6 +1101,19 @@ Join Us
  
 
 
+Customer Care
+
+
+
+                      US & Canada
+                    
+ 
+
+                      Global Help Center
+                    
+ 
+
+
 Reach Out
 
 
@@ -1038,18 +1127,6 @@ Reach Out
  
 
                       Contact the Editors
-                    
- 
-
-                      U.S. Customer Service
-                    
- 
-
-                      E.U. Customer Service
-                    
- 
-
-                      Asia Customer Service
                     
  
 
@@ -1070,7 +1147,7 @@ More
                     
  
 
-                      Terms of Service
+                      Terms of Use
                     
  
 
@@ -1334,7 +1411,7 @@ Search
 
 
 
-          © 2021 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy (Your California Privacy Rights) and Do Not Sell My Personal Information. TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice. This site is protected by reCAPTCHA and the Google Privacy Policy   Terms of Service  apply. 
+          © 2021 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy (Your California Privacy Rights), Do Not Sell My Personal Information and TIMEPieces Terms and Conditions. TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice. This site is protected by reCAPTCHA and the Google Privacy Policy   Terms of Service  apply. 
         
 
 
@@ -1344,12 +1421,12 @@ Search
 
 
 
-BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsUK makes free-trade offer to Australia despite farmers' fearsPublished21 MaySharecloseShare pageCopy linkAbout sharingimage copyrightReutersimage captionAustralia's mining industry is a major driver of exports to the UKThe UK has offered trade deal terms to Australia under which both countries would phase out taxes on imports over 15 years.The cabinet was reportedly split on what terms to propose, amid concerns UK beef and lamb farmers could be undercut by larger Australian producers.But the dispute was apparently resolved after Boris Johnson pushed for unity.International Trade Secretary Liz Truss formally made the UK offer to her Australian counterpart on Friday.If accepted, it would also lead to quotas - limits - on tax-free trade between the two countries to be phased out.The National Farmers' Union (NFU) has warned that freeing up the UK-Australian trade in meat will lead to hundreds of British cow and sheep breeders going out of business.Why is an Australia trade deal controversial?How many trade deals has the UK done?Ministers are keen to strike as many trade deals as possible following Brexit, and Ms Truss wants one in place with Australia by the time the UK hosts the G7 summit - of leading economies - in June.But she had reportedly been at odds with Environment Secretary George Eustice over the possible impact on farmers of removing import taxes, called tariffs, that are normally paid to the government.With these differences seemingly resolved at a Downing Street meeting chaired by the prime minister on Thursday, Ms Truss put the UK's terms for a deal to Australian counterpart Dan Tehan at an online meeting on Friday.Speaking on a visit to Portsmouth, Mr Johnson said: "We are certainly looking at doing free trade deals around the world."They present a fantastic opportunity for our farmers, for businesses of all kinds, for our manufacturers. We should see these new openings not as threats but as opportunities."Mr Tehan said he was "confident" of reaching an agreement with the UK by early June, having had "very positive discussions" with Ms Truss, the news.com.au website reported.image copyrightReutersimage captionFarmers have raised concerns over competition from larger-scale Australian operatorsIn 2019-20, trade in goods and services between Australia and the UK was valued at £20.1bn, and both sides are hoping to expand this amount considerably.Currently, metals, wine and machines form the biggest goods exports from Australia to the UK, while Australia's main UK imports are cars, medicines and alcoholic drinks.Trade in meat between the two countries is small, with 0.15% of all Australian beef exports going to the UK and 14% of sheep meat imports to the UK coming from Australia. NFU president Minette Batters said removing tariffs on these products would "have a massive impact" on British farms, which would be unable to compete, in terms of scale, with Australia's vast cattle and sheep stations.She added: "We continue to maintain that a tariff-free trade deal with Australia will jeopardise our own farming industry and will cause the demise of many, many beef and sheep farms throughout the UK. This is true whether tariffs are dropped immediately or in 15 years' time."'Distinct advantages'The Scottish and Welsh governments have both urged Mr Johnson to ensure UK farmers are not left exposed.And Northern Ireland's agriculture minister, Edwin Poots, said he was "strongly opposed" to ending tariffs and quotas.But Conservative MP Neil Parish, chairman of the Commons Environment, Food and Rural Affairs Committee, said UK farmers could succeed in the beef market by exporting more "higher-end" cuts, such as sirloin, to Australia.A Department for International Trade spokesperson said: "Any deal we sign with Australia will include protections for the agriculture industry and will not undercut UK farmers or compromise our high standards."Typically, any tariff liberalisation is staged over time, with safeguards built in. We will continue to work with the industry, keeping them involved throughout the process and helping it capture the full benefits of trade."Are you a farmer in the UK? What are your thoughts on a free-trade deal? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
+BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusClimateVideoWorldAsiaUKBusinessTechScienceStoriesMoreEntertainment & ArtsHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsUK makes free-trade offer to Australia despite farmers' fearsPublished21 MaySharecloseShare pageCopy linkAbout sharingImage source, ReutersImage caption, Australia's mining industry is a major driver of exports to the UKThe UK has offered trade deal terms to Australia under which both countries would phase out taxes on imports over 15 years.The cabinet was reportedly split on what terms to propose, amid concerns UK beef and lamb farmers could be undercut by larger Australian producers.But the dispute was apparently resolved after Boris Johnson pushed for unity.International Trade Secretary Liz Truss formally made the UK offer to her Australian counterpart on Friday.If accepted, it would also lead to quotas - limits - on tax-free trade between the two countries to be phased out.The National Farmers' Union (NFU) has warned that freeing up the UK-Australian trade in meat will lead to hundreds of British cow and sheep breeders going out of business.Why is an Australia trade deal controversial?How many trade deals has the UK done?Ministers are keen to strike as many trade deals as possible following Brexit, and Ms Truss wants one in place with Australia by the time the UK hosts the G7 summit - of leading economies - in June.But she had reportedly been at odds with Environment Secretary George Eustice over the possible impact on farmers of removing import taxes, called tariffs, that are normally paid to the government.With these differences seemingly resolved at a Downing Street meeting chaired by the prime minister on Thursday, Ms Truss put the UK's terms for a deal to Australian counterpart Dan Tehan at an online meeting on Friday.Speaking on a visit to Portsmouth, Mr Johnson said: "We are certainly looking at doing free trade deals around the world."They present a fantastic opportunity for our farmers, for businesses of all kinds, for our manufacturers. We should see these new openings not as threats but as opportunities."Mr Tehan said he was "confident" of reaching an agreement with the UK by early June, having had "very positive discussions" with Ms Truss, the news.com.au website reported.Image source, ReutersImage caption, Farmers have raised concerns over competition from larger-scale Australian operatorsIn 2019-20, trade in goods and services between Australia and the UK was valued at £20.1bn, and both sides are hoping to expand this amount considerably.Currently, metals, wine and machines form the biggest goods exports from Australia to the UK, while Australia's main UK imports are cars, medicines and alcoholic drinks.Trade in meat between the two countries is small, with 0.15% of all Australian beef exports going to the UK and 14% of sheep meat imports to the UK coming from Australia. NFU president Minette Batters said removing tariffs on these products would "have a massive impact" on British farms, which would be unable to compete, in terms of scale, with Australia's vast cattle and sheep stations.She added: "We continue to maintain that a tariff-free trade deal with Australia will jeopardise our own farming industry and will cause the demise of many, many beef and sheep farms throughout the UK. This is true whether tariffs are dropped immediately or in 15 years' time."'Distinct advantages'The Scottish and Welsh governments have both urged Mr Johnson to ensure UK farmers are not left exposed.And Northern Ireland's agriculture minister, Edwin Poots, said he was "strongly opposed" to ending tariffs and quotas.But Conservative MP Neil Parish, chairman of the Commons Environment, Food and Rural Affairs Committee, said UK farmers could succeed in the beef market by exporting more "higher-end" cuts, such as sirloin, to Australia.A Department for International Trade spokesperson said: "Any deal we sign with Australia will include protections for the agriculture industry and will not undercut UK farmers or compromise our high standards."Typically, any tariff liberalisation is staged over time, with safeguards built in. We will continue to work with the industry, keeping them involved throughout the process and helping it capture the full benefits of trade."Are you a farmer in the UK? What are your thoughts on a free-trade deal? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
 
 
-If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsBoris JohnsonUK economyTradeTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Critically endangered antelope makes comeback6Cyprus appeals for help as huge wildfire spreads7Swedish Coop stores shut due to huge cyber-attack8US police arrest armed group after stand-off9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
-BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryUK job vacancies highest for a year as lockdown easesPublished18 MaySharecloseShare pageCopy linkAbout sharingimage copyrightReutersUK job vacancies have hit their highest level since the start of the pandemic as the easing of lockdown measures has led employers to start recruiting.In the February-to-April period there were 657,000 vacancies, up about 48,400 on the previous quarter. The unemployment rate fell slightly to 4.8% in the three months to March, down from 4.9% in February, the Office for National Statistics said.The ONS said there were "early signs of recovery" in the jobs market,However, despite the rise in job vacancies over the past 12 months, the level remains almost 128,000 below its pre-pandemic level in the January-to-March quarter of 2020.The official figures confirm several reports in recent weeks by recruitment companies that they are seeing a rise in job advertisements, leading to concern among some employers that they could face staff shortages.UK economy set to grow at fastest rate in 70 yearsAre you currently unemployed? Email haveyoursay@bbc.co.ukThe ONS said the number of workers on payrolls had risen by 97,000 between March and April, but was still 772,000 lower than before the pandemic struck.Darren Morgan, ONS director of economic statistics, said the number of employees on payroll "rose strongly in April" as the economy began to reopen, continuing an improvement from its November trough.But he said: "There remains, however, three-quarters of a million people fewer on the payroll compared with the pre-pandemic peak."With many businesses reopening, the recent recovery in job vacancies continued into April, especially in sectors such as hospitality and entertainment."Chancellor Rishi Sunak said the latest figures showed the impact of the government's focus on protecting jobs during the pandemic."While sadly not every job can be saved, nearly two million fewer people are now expected to be out of work than initially expected - showing our Plan for Jobs is working."Business leaders welcomed the vacancy levels as positive signs for the economy, but warned there was still a long way to go.'I've applied for 500 jobs'As many experts have pointed out, Tuesday's positive jobs news does not disguise that many people in the labour market are still struggling. Interior designer Sheila Smith lost her job working for hospitality venues in October - and despite some 500 applications is still unemployed.She worries that businesses are looking for someone younger and cheaper than her. "I've been for a few interviews, which I haven't been successful at," she told the BBC.She said the most frustrating aspect of the job search was the lack of communication from potential employers."When you take time to go for a job interview, get yourself prepared, but then you hear nothing back - that's the most frustrating thing."Although the number of job vacancies is rising, they are still well down on pre-pandemic levels and Sheila reckons there's about 200 people applying for each post advertised."It destroys your confidence," she said. "I've worked solidly for years in the industry, and you find yourself in this situation scrambling for jobs."You feel like you're stuck at square one."Matthew Percival, director of people and skills at the CBI business lobby group, said: "Businesses are starting to report vacancies they're struggling to fill so government support for skills and retraining is essential."He added that companies still needed clarity over the rules for the next stage of reopening the economy, which is currently planned for 21 June.Research consultancy Capital Economics said the fall in the jobless rate showed that the jobs furlough scheme was "insulating the labour market".The firm added that although it expects the unemployment rate to rise over the next few months, that would most likely be due to people returning to the labour market rather than people losing their jobs.The most encouraging sign here is that vacancies over the three months to April averaged 657,000. The ONS said its experimental monthly vacancy statistics for April itself were "at near pre-pandemic levels". There are increasing numbers of employers expressing concern about recruitment difficulties.The jobs data continue to show some signs of resilience and recovery, with unemployment down again to 4.8%, and employment up for the fifth consecutive month. It's so far a slow recovery based on gradual re-openings seen up until last month.The pattern is, though, as uneven as the lifting of the restrictions. Hospitality and retail jobs are still well down on pre-pandemic levels, and this means all of the loss in payrolled jobs and more can currently be explained by what has happened to young workers. There are still over four million workers on the furlough scheme, who count as employed.Are you currently unemployed? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
+If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsBoris JohnsonUK economyTradeTop StoriesSudan's military dissolves civilian governmentA leading general blames political infighting, as protesters in Khartoum denounce a coup.Published1 hour agoSudan general declares state of emergencyPublished20 March 2019Afghanistan facing desperate food crisis, UN warnsPublished5 hours agoFeaturesFive things in China's past shaping Xi's world viewThe bumpy road to India's electric car dreams11 of Gunther's best moments on FriendsLiving with the world's oldest mummiesHow can Coca-Cola solve its plastic problem? VideoHow can Coca-Cola solve its plastic problem?Is internet addiction a growing problem?Finding the world's oldest animal cave art. VideoFinding the world's oldest animal cave artHow the West has fallen out with EthiopiaHow China's super-rich have an unexpected obsessionElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most Read1Baldwin was pointing gun at camera on film set2Sudan's military dissolves civilian government3Friends stars lead tributes to Gunther actor4The bumpy road to India's electric car dreams5Australia helps buy Pacific firm 'to block China'6German IS woman jailed for Yazidi girl's death7Five things in China's past shaping Xi's world view8Amnesty International to close Hong Kong offices9Beijing marathon postponed due to Covid surge10Afghanistan facing desperate food crisis, UN warnsBBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusClimateVideoWorldAsiaUKBusinessTechScienceStoriesMoreEntertainment & ArtsHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryUK job vacancies highest for a year as lockdown easesPublished18 MaySharecloseShare pageCopy linkAbout sharingImage source, ReutersUK job vacancies have hit their highest level since the start of the pandemic as the easing of lockdown measures has led employers to start recruiting.In the February-to-April period there were 657,000 vacancies, up about 48,400 on the previous quarter. The unemployment rate fell slightly to 4.8% in the three months to March, down from 4.9% in February, the Office for National Statistics said.The ONS said there were "early signs of recovery" in the jobs market,However, despite the rise in job vacancies over the past 12 months, the level remains almost 128,000 below its pre-pandemic level in the January-to-March quarter of 2020.The official figures confirm several reports in recent weeks by recruitment companies that they are seeing a rise in job advertisements, leading to concern among some employers that they could face staff shortages.UK economy set to grow at fastest rate in 70 yearsAre you currently unemployed? Email haveyoursay@bbc.co.ukThe ONS said the number of workers on payrolls had risen by 97,000 between March and April, but was still 772,000 lower than before the pandemic struck.Darren Morgan, ONS director of economic statistics, said the number of employees on payroll "rose strongly in April" as the economy began to reopen, continuing an improvement from its November trough.But he said: "There remains, however, three-quarters of a million people fewer on the payroll compared with the pre-pandemic peak."With many businesses reopening, the recent recovery in job vacancies continued into April, especially in sectors such as hospitality and entertainment."Chancellor Rishi Sunak said the latest figures showed the impact of the government's focus on protecting jobs during the pandemic."While sadly not every job can be saved, nearly two million fewer people are now expected to be out of work than initially expected - showing our Plan for Jobs is working."Business leaders welcomed the vacancy levels as positive signs for the economy, but warned there was still a long way to go.'I've applied for 500 jobs'As many experts have pointed out, Tuesday's positive jobs news does not disguise that many people in the labour market are still struggling. Interior designer Sheila Smith lost her job working for hospitality venues in October - and despite some 500 applications is still unemployed.She worries that businesses are looking for someone younger and cheaper than her. "I've been for a few interviews, which I haven't been successful at," she told the BBC.She said the most frustrating aspect of the job search was the lack of communication from potential employers."When you take time to go for a job interview, get yourself prepared, but then you hear nothing back - that's the most frustrating thing."Although the number of job vacancies is rising, they are still well down on pre-pandemic levels and Sheila reckons there's about 200 people applying for each post advertised."It destroys your confidence," she said. "I've worked solidly for years in the industry, and you find yourself in this situation scrambling for jobs."You feel like you're stuck at square one."Matthew Percival, director of people and skills at the CBI business lobby group, said: "Businesses are starting to report vacancies they're struggling to fill so government support for skills and retraining is essential."He added that companies still needed clarity over the rules for the next stage of reopening the economy, which is currently planned for 21 June.Research consultancy Capital Economics said the fall in the jobless rate showed that the jobs furlough scheme was "insulating the labour market".The firm added that although it expects the unemployment rate to rise over the next few months, that would most likely be due to people returning to the labour market rather than people losing their jobs.The most encouraging sign here is that vacancies over the three months to April averaged 657,000. The ONS said its experimental monthly vacancy statistics for April itself were "at near pre-pandemic levels". There are increasing numbers of employers expressing concern about recruitment difficulties.The jobs data continue to show some signs of resilience and recovery, with unemployment down again to 4.8%, and employment up for the fifth consecutive month. It's so far a slow recovery based on gradual re-openings seen up until last month.The pattern is, though, as uneven as the lifting of the restrictions. Hospitality and retail jobs are still well down on pre-pandemic levels, and this means all of the loss in payrolled jobs and more can currently be explained by what has happened to young workers. There are still over four million workers on the furlough scheme, who count as employed.Are you currently unemployed? Share your experiences by emailing haveyoursay@bbc.co.uk.Please include a contact number if you are willing to speak to a BBC journalist. You can also get in touch in the following ways:WhatsApp: +44 7756 165803Tweet: @BBC_HaveYourSayUpload pictures or videoPlease read our terms & conditions and privacy policy
 
 
-If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsOffice for National StatisticsUK economyUnemploymentYouth unemploymentMore on this storyUK economy set to grow at fastest rate in 70 yearsPublished6 MayOlder workers 'see biggest jobs fall since 1980s'Published26 AprilTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Cyprus appeals for help as huge wildfire spreads6Critically endangered antelope makes comeback7US police arrest armed group after stand-off8Swedish Coop stores shut due to huge cyber-attack9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
-BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusVideoWorldAsiaUKBusinessTechScienceStoriesEntertainment & ArtsMoreHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryHouse prices climb at highest rate since before credit crunchPublished19 MaycommentsCommentsSharecloseShare pageCopy linkAbout sharingRelated TopicsCoronavirus pandemicimage copyrightGetty ImagesAverage UK house prices soared by 10.2% in the year to March, the highest annual growth rate for 14 years, according to official figures.The Office for National Statistics said average prices rose by £24,000 to £256,000 - a new record high.Prices have been pushed up by the temporary stamp duty reduction, low interest rates, as well as people wanting more space after lockdown.Hargreaves Lansdown analyst Sarah Coles warned the market risked overheating."We're back to the kind of double-figure house price rises we saw in the heady days before the financial crisis [of 2008]," the analyst said. "And while lenders are far more cautious than they were back in 2007, in this kind of market, there's still the risk buyers will lose their heads, and make a property mistake that could haunt them for years."'Huge inequalities'Anna Clare Harper, chief executive of asset manager SPI Capital, said the sharp rise in prices would mean fewer people were able to afford new homes."The effects are clear: with wages rising significantly more slowly than house prices, affordability constraints are increasing," she said."This is creating huge inequalities between older and younger generations, and growing demand from both younger and older renters who are priced out."For first-time buyers, this is a hideous market," she added. "With average prices up £24,000 in a year, saving a 10% deposit needs £2,400 extra in savings."image copyrightPA MediaTax breaksTax breaks introduced during the pandemic to boost the housing market had a marked effect over the period. The ONS report said: "Changes in the tax paid on housing transactions may have allowed sellers to request higher prices as the buyers' overall costs are reduced."A stamp duty holiday in England and Northern Ireland, which had been due to end in March, was recently extended.In Wales, a holiday on the equivalent tax has also been extended until the end of June 2021.A similar property transaction tax in Scotland ended on 31 March 2021."The extension of the stamp duty holiday helped ensure this won't be the last of the record months this year," said Sarah Coles.'Fear of missing out' fuels record house pricesUK housing market 'on the boil' as prices riseAverage house prices increased over the year in England to £275,000, a 10.2% annual increase.In Wales prices climbed 11% to £185,000, in Scotland 10.6% to £167,000 and in Northern Ireland they were up 6% to £149,000.In England, Yorkshire and the Humber had the highest annual house price growth, up 14% in the year to March.The lowest annual growth was in London, where average prices increased by 3.7% over the year.However, London's average house prices remained the most expensive of any region in the UK at an average of £500,000.Different propertyThe figures also suggested a switch in demand for different types of property.The average price of detached properties increased by 11.7% in the year to March 2021, while flats and maisonettes were up just 5.0% over the period."The demand for a new type of home, coupled with the government's mortgage guarantee scheme, will continue to support transaction levels in the months ahead, and potentially in the medium-term," said Andrew Montlake, managing director of independent mortgage broker Coreco. "Everything has changed due to the pandemic and that change will play out over several years yet."View commentsRelated TopicsUK economyHousing marketCoronavirus pandemicMore on this story'Fear of missing out' fuels record house pricesPublished10 MayUK housing market 'on the boil' as prices risePublished30 AprilTop StoriesMiami site search suspended ahead of demolitionTeams are preparing to raze the standing portion of an apartment building that collapsed last week.Published2 hours agoEngland thrash Ukraine to reach Euros semisPublished8 hours agoTwenty missing as landslide hits Japanese cityPublished1 hour agoFeatures'Coercion and rape': Investigating my yoga schoolWhy are Chinese tech brands flocking to Euro 2020?The cat with more than 50,000 social followers. VideoThe cat with more than 50,000 social followersThe European cities connected by a 'portal' VideoThe European cities connected by a 'portal'Videographer goes viral with sheep drone shots. VideoVideographer goes viral with sheep drone shotsWhere Biden's big theme faces fierce testThe stolen guns that halted Nigeria's separatistsA boom, then the ground shookThe unexpected downsides of being a 'night owl'Elsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most ReadMiami site search suspended ahead of demolition1Charles reveals favourite songs on radio show2Bollywood's Aamir Khan and Kiran Rao divorce3Twenty missing as landslide hits Japanese city4England thrash Ukraine to make last four5Cyprus appeals for help as huge wildfire spreads6Critically endangered antelope makes comeback7US police arrest armed group after stand-off8Swedish Coop stores shut due to huge cyber-attack9Vatican orders cardinal to face embezzlement trial10BBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+If you are reading this page and can't see the form you will need to visit the mobile version of the BBC website to submit your question or comment or you can email us at HaveYourSay@bbc.co.uk. Please include your name, age and location with any submission. Related TopicsUnemploymentYouth unemploymentUK economyOffice for National StatisticsUnemployment in the UKMore on this storyUK economy set to grow at fastest rate in 70 yearsPublished6 MayOlder workers 'see biggest jobs fall since 1980s'Published26 AprilTop StoriesSudan's military dissolves civilian governmentA leading general blames political infighting, as protesters in Khartoum denounce a coup.Published1 hour agoSudan general declares state of emergencyPublished20 March 2019Afghanistan facing desperate food crisis, UN warnsPublished5 hours agoFeaturesFive things in China's past shaping Xi's world viewThe bumpy road to India's electric car dreams11 of Gunther's best moments on FriendsLiving with the world's oldest mummiesHow can Coca-Cola solve its plastic problem? VideoHow can Coca-Cola solve its plastic problem?Is internet addiction a growing problem?Finding the world's oldest animal cave art. VideoFinding the world's oldest animal cave artHow the West has fallen out with EthiopiaHow China's super-rich have an unexpected obsessionElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most Read1Baldwin was pointing gun at camera on film set2Sudan's military dissolves civilian government3Friends stars lead tributes to Gunther actor4The bumpy road to India's electric car dreams5Australia helps buy Pacific firm 'to block China'6German IS woman jailed for Yazidi girl's death7Five things in China's past shaping Xi's world view8Amnesty International to close Hong Kong offices9Beijing marathon postponed due to Covid surge10Afghanistan facing desperate food crisis, UN warnsBBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
+BBC HomepageSkip to contentAccessibility HelpYour accountHomeNewsSportReelWorklifeTravelFutureCultureMenuMoreSearchHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsClose menuBBC NewsMenuHomeCoronavirusClimateVideoWorldAsiaUKBusinessTechScienceStoriesMoreEntertainment & ArtsHealthWorld News TVIn PicturesReality CheckNewsbeatLong ReadsBusinessMarket DataNew EconomyNew Tech EconomyCompaniesEntrepreneurshipTechnology of BusinessBusiness of SportGlobal EducationEconomyGlobal Car IndustryHouse prices climb at highest rate since before credit crunchPublished19 MaycommentsCommentsSharecloseShare pageCopy linkAbout sharingRelated TopicsCoronavirus pandemicImage source, Getty ImagesAverage UK house prices soared by 10.2% in the year to March, the highest annual growth rate for 14 years, according to official figures.The Office for National Statistics said average prices rose by £24,000 to £256,000 - a new record high.Prices have been pushed up by the temporary stamp duty reduction, low interest rates, as well as people wanting more space after lockdown.Hargreaves Lansdown analyst Sarah Coles warned the market risked overheating."We're back to the kind of double-figure house price rises we saw in the heady days before the financial crisis [of 2008]," the analyst said. "And while lenders are far more cautious than they were back in 2007, in this kind of market, there's still the risk buyers will lose their heads, and make a property mistake that could haunt them for years."'Huge inequalities'Anna Clare Harper, chief executive of asset manager SPI Capital, said the sharp rise in prices would mean fewer people were able to afford new homes."The effects are clear: with wages rising significantly more slowly than house prices, affordability constraints are increasing," she said."This is creating huge inequalities between older and younger generations, and growing demand from both younger and older renters who are priced out."For first-time buyers, this is a hideous market," she added. "With average prices up £24,000 in a year, saving a 10% deposit needs £2,400 extra in savings."Image source, PA MediaTax breaksTax breaks introduced during the pandemic to boost the housing market had a marked effect over the period. The ONS report said: "Changes in the tax paid on housing transactions may have allowed sellers to request higher prices as the buyers' overall costs are reduced."A stamp duty holiday in England and Northern Ireland, which had been due to end in March, was recently extended.In Wales, a holiday on the equivalent tax has also been extended until the end of June 2021.A similar property transaction tax in Scotland ended on 31 March 2021."The extension of the stamp duty holiday helped ensure this won't be the last of the record months this year," said Sarah Coles.'Fear of missing out' fuels record house pricesUK housing market 'on the boil' as prices riseAverage house prices increased over the year in England to £275,000, a 10.2% annual increase.In Wales prices climbed 11% to £185,000, in Scotland 10.6% to £167,000 and in Northern Ireland they were up 6% to £149,000.In England, Yorkshire and the Humber had the highest annual house price growth, up 14% in the year to March.The lowest annual growth was in London, where average prices increased by 3.7% over the year.However, London's average house prices remained the most expensive of any region in the UK at an average of £500,000.Different propertyThe figures also suggested a switch in demand for different types of property.The average price of detached properties increased by 11.7% in the year to March 2021, while flats and maisonettes were up just 5.0% over the period."The demand for a new type of home, coupled with the government's mortgage guarantee scheme, will continue to support transaction levels in the months ahead, and potentially in the medium-term," said Andrew Montlake, managing director of independent mortgage broker Coreco. "Everything has changed due to the pandemic and that change will play out over several years yet."View commentsRelated TopicsHousing marketUK economyCoronavirus pandemicMore on this story'Fear of missing out' fuels record house pricesPublished10 MayUK housing market 'on the boil' as prices risePublished30 AprilTop StoriesSudan's military dissolves civilian governmentA leading general blames political infighting, as protesters in Khartoum denounce a coup.Published1 hour agoSudan general declares state of emergencyPublished20 March 2019Afghanistan facing desperate food crisis, UN warnsPublished5 hours agoFeaturesFive things in China's past shaping Xi's world viewThe bumpy road to India's electric car dreams11 of Gunther's best moments on FriendsLiving with the world's oldest mummiesHow can Coca-Cola solve its plastic problem? VideoHow can Coca-Cola solve its plastic problem?Is internet addiction a growing problem?Finding the world's oldest animal cave art. VideoFinding the world's oldest animal cave artHow the West has fallen out with EthiopiaHow China's super-rich have an unexpected obsessionElsewhere on the BBCLyrics quizHave you been getting these songs wrong?Feeling hotWhat happens to your body in extreme heat?Most Read1Baldwin was pointing gun at camera on film set2Sudan's military dissolves civilian government3Friends stars lead tributes to Gunther actor4The bumpy road to India's electric car dreams5Australia helps buy Pacific firm 'to block China'6German IS woman jailed for Yazidi girl's death7Five things in China's past shaping Xi's world view8Amnesty International to close Hong Kong offices9Beijing marathon postponed due to Covid surge10Afghanistan facing desperate food crisis, UN warnsBBC News ServicesOn your mobileOn smart speakersGet news alertsContact BBC NewsHomeNewsSportReelWorklifeTravelFutureCultureMusicTVWeatherSoundsTerms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with usAdChoices / Do Not Sell My Info© 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.
