@@ -2,6 +2,7 @@ from caltfidf import cal_tfidf
 from caltfidf import cos_sim
 import numpy as np
 
+
 with open('./input.dat') as fp:
     input_documents = fp.readlines()
 
