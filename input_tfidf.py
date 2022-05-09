@@ -3,16 +3,20 @@ from caltfidf import cos_sim
 import numpy as np
 
 
-with open('input.dat') as fp:
+with open('./input.dat') as fp:
     input_documents = fp.readlines()
 
 docTFIDFdata, rdic = cal_tfidf(input_documents)
+
+# print('Word Table = ', rdic)
+# print()
+# print()
 
 # print(docTFIDFdata)
 # print()
 # print()
 
-tfidfTable = [[0.0 for i in range(len(rdic))] for j in range(len(docTFIDFdata))]
+tfidfTable = [[0.0 for _ in range(len(rdic))] for _ in range(len(docTFIDFdata))]
 
 for i in range(len(input_documents)):
     # print(docTFIDFdata[input_documents[i]])
@@ -32,7 +36,7 @@ resKey = []
 res = []
 
 for i in range(len(input_documents)):
-    for j in range(i + 1, len(input_documents)):
+    for j in range(i+1, len(input_documents)):
         title = str(i+1) + ':' + str(j+1)
         resKey.append(title)
         x = np.array(tfidfTable[i])
@@ -42,4 +46,4 @@ for i in range(len(input_documents)):
         res.append(cos_sim(x, y))
 
 propSort = sorted(dict(zip(resKey, res)).items(), key=lambda x: x[0])
-print(propSort)
+print(*propSort)

@@ -22,7 +22,6 @@ def cal_tfidf(input_documents):
         words = document.split()
         for word in words:
             docTFtable[document][word] += 1
-
         for kw in docTFtable[document].keys():
             DFtable[kw] += 1
 
@@ -38,5 +37,4 @@ def cos_sim(v1, v2):
     normB = np.linalg.norm(v2)
     if normA == 0 or normB == 0:
         return 0
-    else:
-        return np.dot(v1, v2) / normA * normB
+    return np.dot(v1, v2) / normA * normB
